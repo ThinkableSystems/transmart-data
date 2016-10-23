@@ -83,7 +83,7 @@ update_etl:
 
 KETTLE_ARCHIVE=pdi-ce-$(KETTLE_VERSION)-stable.tar.gz
 $(KETTLE_ARCHIVE):
-	curl -L -f "http://downloads.sourceforge.net/project/pentaho/Data%20Integration/4.4.0-stable/$@" > $@
+	curl -L -f "http://heanet.dl.sourceforge.net/project/pentaho/Data%20Integration/4.4.0-stable/$@" > $@
 
 data-integration: $(KETTLE_ARCHIVE)
 	tar --touch -xzf $<
